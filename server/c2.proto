@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package c2;
 
-// Add the go_package option here, adjust the path to your current structure
-option go_package = "github.com/gerbsec/Helheim/server/c2";
+// Update go_package to a simple relative directory name
+option go_package = "./c2";
 
 service CommandControl {
   // Executes a command on the server.
@@ -26,3 +26,4 @@ message StatusRequest {}
 message StatusResponse {
   string status = 1; // A simple status message.
 }
+
